@@ -1,0 +1,31 @@
+<div class="">
+    <div class="Wrapper">
+        <div class="Hashtags row">
+            <div class="HashtagTitle">
+                <h3>Trending Hashtags </h3>
+            </div>
+            <div class="Hashtag" *ngFor="let hashtag of TrendingHashtags">
+               <app-hashtag [hashtag]="hashtag" class="HashtagComponent"></app-hashtag>
+            </div>
+            <div class="ViewMore">
+                <a href="" class="text-decoration-none">view more</a>
+            </div>
+            <div class="PublishPost btn btn-primary">
+                <a href="#" [routerLink]='["publish-post"]' style="text-decoration: none;">
+                    <span style="color: white">Publish post</span>
+                </a>
+            </div>
+        </div>
+
+        
+
+        <div class="row">
+          <app-tagged-videos class="TaggedVideos">
+    
+          </app-tagged-videos>
+        </div>
+          
+    </div>
+    
+    
+</div>

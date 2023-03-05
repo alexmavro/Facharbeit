@@ -1,0 +1,36 @@
+<!-- <div class="container">
+    <div class="row col-sm-6 publishCard">
+        <input [(ngModel)]="title" type="text" required>
+        <input type="file" (change)="onFileSelected($event)" required>
+        <Button (click)="publishPost()">
+            Publish
+        </Button>
+    </div>
+</div> -->
+
+<form>
+    <div class="offset-4 col-md-4 card p-3 mt-5">
+        <h1>
+            Publish a Post
+        </h1>
+        <div class="mb-3">
+            <label for="title" class="form-label">Title</label>
+            <input type="text" [(ngModel)]="title" [ngModelOptions]="{standalone: true}" class="form-control" id="title"
+                aria-describedby="titleHelp">
+            <div id="titleHelp" class="form-text">Select a title for your post</div>
+        </div>
+        <div class="mb-3">
+            <label for="fileInput" class="form-label">File</label>
+            <input type="file" class="form-control" (change)="onFileSelected($event)" id="fileInput">
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <a href="#" ngClass="btn btn-secondary" routerLink="/" class="btn btn-primary">Go back</a>
+            </div>
+            <div class="col-md-6">
+                <button type="submit" (click)="publishPost()" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+
+    </div>
+</form>

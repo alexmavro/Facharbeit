@@ -1,0 +1,22 @@
+.HashtagTitle{
+    margin-top: 10px;
+    color: #F4F3EE;
+    align-self: flex-start;
+    border-bottom: 1px solid #F4F3EE;
+    margin-bottom: 10px;
+}
+
+.RightSideBarWrapper{
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: auto;
+    float: right;
+    border-left: 1px solid #F4F3EE;
+}
+
+.AccountTitle{
+    color: #F4F3EE;
+    border-bottom: 1px solid #F4F3EE;
+}

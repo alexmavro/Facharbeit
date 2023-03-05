@@ -1,0 +1,56 @@
+<div class="PostWrapper">
+
+    <div class="post">
+        <div class="PostHeader">
+            <div class="PostTitle">
+                {{postRef?.title}}
+                
+            </div>
+        </div>
+        <div *ngIf="postRef!.mediaType == 'video/mp4'" class="Media ratio ratio-16x9">
+            <video controls class="video-js">
+                <source [src]="mediaUrl" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+        </div>
+        <div>
+            <a [href]="mediaUrl">
+                <div class="imageContainer" *ngIf="postRef!.mediaType !== 'video/mp4'">
+                    <div>
+                        <div>
+                            <Img class="image" [src]="mediaUrl" alt="post">
+                        </div>
+                        <div class="showMore">
+                            Show more
+                        </div>
+
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="PostFooter container-fluid">
+            <div class="likerow">
+                <div class="likes">
+                    <a (click)="reactPost(2)">
+                        <i [ngClass]="{'activatedLike': postedReaction?.reaction == 2}"
+                            class="bi bi-hand-thumbs-up PostLikeIcon"></i>
+                    </a>
+                    <h3>{{postRef?.likeCount}}</h3>
+                </div>
+                <div class="likes">
+                    <a (click)="reactPost(1)">
+                        <i [ngClass]="{'activatedLike': postedReaction?.reaction == 1}"
+                            class="bi bi-hand-thumbs-down PostLikeIcon"></i>
+                    </a>
+                    <h3>{{postRef?.dislikeCount}}</h3>
+                </div>
+
+                <div class="col-lg-3 Likes">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

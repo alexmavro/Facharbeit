@@ -1,0 +1,23 @@
+.HashtagWrapper{
+    display: flex;
+    float: left;
+    flex-direction: column;
+    padding: 10px;
+    display: inline-block;
+    width: 180px;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+}
+.HashtagWrapper:hover{
+    transition: 0.4s;
+    background-color: #343434;
+}
+
+.HashtagCount{
+    font-size: small;
+    color: #F4F3EE;
+}
+
+.HashtagTitle{
+    color: #F4F3EE;
+}

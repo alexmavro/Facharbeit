@@ -1,0 +1,109 @@
+.PostWrapper{
+    display: block;
+    max-height: 750px;
+    min-height: 300px;
+    width: 711px;
+    border-bottom: 1px solid #c8c9ca;
+    
+    padding: 10px;
+
+    border-left: 1px solid #c8c9ca;
+    border-right: 1px solid #c8c9ca;
+    
+}
+.PostWrapper:hover{
+    transition: .3s;
+    background-color: #2b2b2b;
+}
+
+.post{
+    color: #F4F3EE;
+    line-height: 1;
+    height: 100%;
+}
+
+.PostHeader{
+    padding: 10px;
+}
+
+.PostTitle{
+    font-size: 21px;
+    width: 100% ;
+    overflow: hidden !important;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.Media{
+    max-height: 400px;
+    
+    max-width: 711px;
+    background-color: #F4F3EE;
+
+}
+
+.PostFooter{
+    align-items: center;
+    display: flex;
+}
+
+.Likes{
+    vertical-align: baseline;
+}
+
+.image{
+    display: block;
+    position: relative;
+    max-width: 100%;
+}
+
+.imageContainer{
+    display: flex;
+    justify-content: center;
+    max-height: 500px;
+    
+    padding-top: 20px;
+    padding-bottom: 20px;
+    overflow: hidden;
+    position: relative;
+    
+}
+
+.showMore{
+    width: 150px;
+    height: 50px;
+    float: left;
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    z-index: 1000;
+    background-color: #00000050;
+    color: #FFFFFF;
+    font-weight: bold;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.likerow{    
+        display: flex;
+}
+
+.likes {
+    padding: 10px;
+    padding-top: 15px;
+    display: flex;
+    vertical-align: bottom;
+    margin-right: 50px;
+}
+
+.PostLikeIcon{
+    font-size: 35px;
+    pointer-events: painted;
+}
+
+.activatedLike{
+    color: #119da4;
+}

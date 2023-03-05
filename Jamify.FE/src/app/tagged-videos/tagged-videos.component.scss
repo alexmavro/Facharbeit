@@ -1,0 +1,53 @@
+.TaggedVideoWrapper{
+    display: flex;
+    float: left;
+    flex-direction: column;
+    padding: 10px;
+    display: inline-block;
+    width: 180px;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    background-color: #343434;
+    border: #343434 1px solid;
+}
+
+.TaggedVideoWrapper:hover{
+    transition: 0.4s;
+    background-color: #0f0f0f;
+    border: #F4F3EE 1px solid;
+}
+
+.TaggedVideoTitle{
+    color: #F4F3EE;
+    margin-left: 10px;
+}
+
+.TaggedVideoWrapperTop{
+    display: flex;
+    float: left;
+    flex-direction: column;
+    padding: 10px;
+    display: inline-block;
+    width: 180px;
+    overflow: hidden !important;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    background-color: #343434;
+}
+
+.TaggedVideoWrapperBottom{
+    display: flex;
+    float: left;
+    flex-direction: column;
+    padding: 10px;
+    display: inline-block;
+    width: 180px;
+    overflow: hidden !important;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-color: #343434;
+}
+
+.TaggedVideosWrapper{
+    margin-top: 55px;
+}

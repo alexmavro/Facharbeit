@@ -1,0 +1,51 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "start-de",
+        "type": "npm",
+        "script": "start",
+        "isBackground": true,
+        "problemMatcher": {
+          "owner": "npm",
+          "background": {
+            "activeOnStart": true,
+            "beginsPattern": ".*",
+            "endsPattern": "Finished.+"
+          },
+          "pattern": {
+            "regexp": "",
+          }
+        }
+      },
+      {
+        "label": "start-de-task",
+        "type": "npm",
+        "script": "start",
+        "isBackground": true,
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": {
+          "owner": "typescript",
+          "source": "ts",
+          "applyTo": "closedDocuments",
+          "fileLocation": [
+            "relative",
+            "${cwd}"
+          ],
+          "pattern": "$tsc",
+          "background": {
+            "activeOnStart": true,
+            "beginsPattern": {
+              "regexp": "(.*?)"
+            },
+            "endsPattern": {
+              "regexp": "Compiled |Failed to compile."
+            }
+          }
+        }
+      },
+    ]
+  }
